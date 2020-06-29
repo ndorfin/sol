@@ -1,9 +1,9 @@
-@import "__variables.css";
-@import "_radii.css";
-@import "_orbits.css";
-@import "_colours.css";
+@import "variables.css";
+@import "data/radii.css";
+@import "data/orbits.css";
+@import "data/colours.css";
 @import "defaults.css";
-@import "solar-system.css";
-@import "star.css";
-@import "orbit.css";
-@import "planet.css";
+@import "components/solar-system.css";
+@import "components/star.css";
+@import "components/orbit.css";
+@import "components/planet.css";
