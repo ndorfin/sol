@@ -1,25 +1,25 @@
 /* Stars */
-#sol      {--colour_body: rgb(255, 254, 243);}
+#sol      {--colour_body: 255, 254, 243;}
 
 /* Planets */
-#jupiter  {--colour_body: rgb(170, 158, 123);}
-#saturn   {--colour_body: rgb(255, 240, 145);}
-#uranus   {--colour_body: rgb(219, 243, 255);}
-#neptune  {--colour_body: rgb(140, 177, 222);}
-#earth    {--colour_body: rgb(6, 80, 170);}
-#venus    {--colour_body: rgb(253, 252, 203);}
-#mars     {--colour_body: rgb(193, 68, 14);}
-#mercury  {--colour_body: rgb(186, 186, 186);}
+#jupiter  {--colour_body: 170, 158, 123;}
+#saturn   {--colour_body: 255, 240, 145;}
+#uranus   {--colour_body: 219, 243, 255;}
+#neptune  {--colour_body: 140, 177, 222;}
+#earth    {--colour_body: 30, 100, 170;}
+#venus    {--colour_body: 253, 252, 203;}
+#mars     {--colour_body: 193, 68, 14;}
+#mercury  {--colour_body: 186, 186, 186;}
 
 /* Dwarf Planets */
-#pluto    {--colour_body: rgb(188, 155, 102);}
-#eris     {--colour_body:;}
+#pluto    {--colour_body: 188, 155, 102;}
+/* #eris     {--colour_body:;} */
 
 /* Moons */
-#ganymede {--colour_body:;}
+/* #ganymede {--colour_body:;}
 #titan    {--colour_body:;}
 #callisto {--colour_body:;}
 #io       {--colour_body:;}
 #luna     {--colour_body:;}
 #europa   {--colour_body:;}
-#triton   {--colour_body:;}
+#triton   {--colour_body:;} */

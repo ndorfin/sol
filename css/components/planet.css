@@ -6,13 +6,28 @@ planet {
   );
 
   position: absolute;
-  z-index: 1;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
   display: block;
   border-radius: 100%;
-  background-color: var(--colour_body,#555);
+  color: rgb(var(--colour_body, '95,95,95'));
+  background-color: currentColor;
   width: var(--planet_diameter);
   height: var(--planet_diameter);
+  border-width: calc(var(--planet_diameter) / 2);
+  border-style: solid;
+  border-color: var(--colour_space_background);
+}
+
+planet::before {
+  content: attr(id);
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: 700;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 2.5vh;
 }

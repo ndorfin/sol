@@ -11,7 +11,21 @@ star {
   transform: translate(-50%, -50%);
   display: block;
   border-radius: 100%;
-  background-color: #fff;
+  color: rgb(var(--colour_body));
+  background-color: currentColor;
   width: var(--star_diameter);
   height: var(--star_diameter);
+  box-shadow: 0 0 2vh rgba(var(--colour_body), .75);
+}
+
+star::before {
+  content: attr(id);
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: 700;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 2.5vh;
 }

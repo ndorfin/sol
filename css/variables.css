@@ -6,8 +6,8 @@
   --font_size_base: 16px;
   --font_line_height: 1;
 
-
-  --colour_space_background: #000;
+  --colour_space_background: rgb(0, 0, 0);
+  --colour_body_rgb: rgb(var(--colour_body));
   --distance_unit_multiplier: 0.0001;
   --diameter_unit_multiplier: var(--distance_unit_multiplier);
   --orbit_unit_multiplier: calc(
