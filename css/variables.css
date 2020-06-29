@@ -15,4 +15,8 @@
     var(--distance_unit_multiplier)
   );
   --distance_display_unit: 1px;
+
+  /* Display settings */
+  --opacity_orbits: 1;
+  --opacity_labels: 1;
 }

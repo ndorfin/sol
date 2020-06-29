@@ -20,6 +20,7 @@ star {
 
 star::before {
   content: attr(id);
+  opacity: var(--opacity_labels);
   text-transform: uppercase;
   color: inherit;
   font-weight: 700;

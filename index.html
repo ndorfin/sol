@@ -66,6 +66,107 @@
     </orbit>
   </system>
 </solar-system>
-<script>
-  solarSystem.scrollIntoView();
-</script>
+<template id="template_form_controls">
+  <details>
+    <summary>Options</summary>
+  <form action="." method="GET">
+
+      <div class="form_row">
+        <label>Zoom</label>
+        <ul class="form_field">
+          <li>
+            <label>
+              <input type="radio" name="zoom_level" data-prop-override="distance_unit_multiplier" data-prop-value="0.001">
+              1000%
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" checked name="zoom_level" data-prop-override="distance_unit_multiplier" data-prop-value="0.0001">
+              100%
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="zoom_level" data-prop-override="distance_unit_multiplier" data-prop-value="0.00001">
+              10%
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="zoom_level" data-prop-override="distance_unit_multiplier" data-prop-value="0.000001">
+              1%
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="zoom_level" data-prop-override="distance_unit_multiplier" data-prop-value="0.0000001">
+              0.1%
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="zoom_level" data-prop-override="distance_unit_multiplier" data-prop-value="0.00000001">
+              0.01%
+            </label>
+          </li>
+        </div>
+      </div>
+      <div class="form_row">
+        <label>Scale options</label>
+        <ul class="form_field">
+          <li>
+            <label>
+              <input type="checkbox" data-prop-name="scale_orbitals" data-prop-value="1">
+              Planet sizes
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-prop-name="scale_orbits" data-prop-value="1">
+              Orbits
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="form_row">
+        <label for="jump_to">Jump to</label>
+        <div class="form_field">
+          <select id="jump_to" data-prop-option>
+            <optgroup label="Star">
+              <option value="#sol">Sol</option>
+            </optgroup>
+            <optgroup label="Planet">
+              <option value="#mercury">Mercury</option>
+              <option value="#venus">Venus</option>
+              <option value="#earth">Earth</option>
+              <option value="#mars">Mars</option>
+              <option value="#jupiter">Jupiter</option>
+              <option value="#saturn">Saturn</option>
+              <option value="#uranus">Uranus</option>
+              <option value="#neptune">Neptune</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+      <div class="form_row">
+        <label>Show</label>
+        <ul class="form_field">
+          <li>
+            <label>
+              <input type="checkbox" checked data-prop-name="opacity_orbits" data-prop-value="0">
+              Orbits
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" checked data-prop-name="opacity_labels" data-prop-value="0">
+              Labels
+            </label>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </details>
+</template>
+<script src="js/index.js" type="module"></script>

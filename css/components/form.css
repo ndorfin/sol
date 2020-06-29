@@ -1,0 +1,74 @@
+details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.25rem;
+  border-radius: 0 .5rem .5rem .5rem;
+  background-color: #fff;
+  clip-path: polygon(0 0, 2rem 0, 2rem 2rem, 0 2rem);
+  transition-property: clip-path;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+details[open] {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+summary {
+  display: block;
+  text-indent: -999rem;
+  overflow: hidden;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+}
+
+summary::after {
+  content: "🛠";
+  text-indent: 0;
+  font-size: 1.5rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+
+.form_row {
+  margin-top: 1rem;
+}
+
+.form_row > label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.form_field {
+  padding: 0.5rem;
+}
+
+form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+[type="number"],
+select {
+  font-size: 1rem;
+  font-family: inherit;
+  width: calc(100% - 1rem);
+}
+
+[type="number"] {
+  padding: 0.25rem 0.5rem;
+  border: rgba(0,0,0,.5) solid 1px;
+  border-radius: 0.25rem;
+}
