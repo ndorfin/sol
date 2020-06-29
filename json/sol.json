@@ -1,0 +1,47 @@
+{
+  "bodies": {
+    "stars": [
+      "sol"
+    ],
+    "planets": [
+      "mercury",
+      "venus",
+      "earth",
+      "mars",
+      "jupiter",
+      "saturn",
+      "uranus",
+      "neptune"
+    ],
+    "dwarf_planets": [
+      "pluto",
+      "eris"
+    ]
+  },
+  "stars": [
+    {
+      "id": "sol",
+      "name": "Sol",
+      "radius": 696342,
+      "colour": [255, 254, 243]
+    }
+  ],
+  "planets": [
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "radius": 2440,
+      "orbit": {
+        "min": 0,
+        "max": 0,
+        "avg": 0
+      },
+      "colour": []
+    }
+  ],
+  "system": {
+    "origin": "sol",
+
+  }
+
+}
