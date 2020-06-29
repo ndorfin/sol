@@ -8,7 +8,7 @@
 
 
   --colour_space_background: #000;
-  --distance_unit_multiplier: 0.001;
+  --distance_unit_multiplier: 0.0001;
   --diameter_unit_multiplier: var(--distance_unit_multiplier);
   --orbit_unit_multiplier: calc(
     var(--distance_au_in_km) *
