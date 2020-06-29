@@ -1,6 +1,6 @@
 star {
   --star_diameter: calc(
-    var(--body_diameter) *
+    (var(--body_radius) * 2) *
     var(--diameter_unit_multiplier) *
     var(--distance_display_unit)
   );

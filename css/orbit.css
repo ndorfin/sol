@@ -1,6 +1,6 @@
 orbit {
   --orbit_display_diameter: calc(
-    var(--orbit_radius) *
+    (var(--orbit_radius) * 2) *
     var(--orbit_unit_multiplier) *
     var(--distance_display_unit)
   );
