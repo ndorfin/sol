@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sol, to scale.</title>
 <link rel="stylesheet" href="css/index.css">
-<solar-system>
+<solar-system id="solar-system">
   <star id="sol"></star>
   <system>
     <orbit name="mercury">
@@ -15,30 +15,30 @@
     </orbit>
     <orbit name="earth">
       <planet id="earth"></planet>
-      <system>
+      <!-- <system>
         <orbit name="luna">
           <moon id="luna"></moon>
         </orbit>
-      </system>
+      </system> -->
     </orbit>
     <orbit name="mars">
       <planet id="mars"></planet>
-      <system>
+      <!-- <system>
         <orbit name="phobos">
           <moon id="phobos"></moon>
         </orbit>
         <orbit name="deimos">
           <moon id="deimos"></moon>
         </orbit>
-      </system>
+      </system> -->
     </orbit>
-    <belt id="asteroids"></belt>
-    <orbit name="ceres">
+    <!-- <belt id="asteroids"></belt> -->
+    <!-- <orbit name="ceres">
       <asteroid id="ceres"></asteroid>
-    </orbit>
+    </orbit> -->
     <orbit name="jupiter">
       <planet id="jupiter"></planet>
-      <system>
+      <!-- <system>
         <orbit name="io">
           <moon id="io"></moon>
         </orbit>
@@ -48,15 +48,15 @@
         <orbit name="titan">
           <moon id="titan"></moon>
         </orbit>
-      </system>
+      </system> -->
     </orbit>
     <orbit name="saturn">
       <planet id="saturn">
-        <ring></ring>
+        <!-- <ring></ring> -->
       </planet>
-      <system>
+      <!-- <system>
 
-      </system>
+      </system> -->
     </orbit>
     <orbit name="uranus">
       <planet id="uranus"></planet>
@@ -67,5 +67,5 @@
   </system>
 </solar-system>
 <script>
-  sol.scrollIntoView();
+  solarSystem.scrollIntoView();
 </script>
