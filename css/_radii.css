@@ -1,0 +1,30 @@
+/*
+  Data from https://en.wikipedia.org/wiki/List_of_Solar_System_objects_by_size
+  Values are in Kilometers (km)
+*/
+
+/* Stars */
+#sol      {--body_diameter: 696342;}
+
+/* Planets */
+#jupiter  {--body_diameter: 69911;}
+#saturn   {--body_diameter: 58232;}
+#uranus   {--body_diameter: 25362;}
+#neptune  {--body_diameter: 24622;}
+#earth    {--body_diameter: 6371;}
+#venus    {--body_diameter: 6052;}
+#mars     {--body_diameter: 3390;}
+#mercury  {--body_diameter: 2440;}
+
+/* Dwarf Planets */
+#pluto    {--body_diameter: 1188;}
+#eris     {--body_diameter: 1163;}
+
+/* Moons */
+#ganymede {--body_diameter: 2634;}
+#titan    {--body_diameter: 2575;}
+#callisto {--body_diameter: 2410;}
+#io       {--body_diameter: 1822;}
+#luna     {--body_diameter: 1737;}
+#europa   {--body_diameter: 1561;}
+#triton   {--body_diameter: 1353;}

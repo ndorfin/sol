@@ -1,0 +1,18 @@
+html {
+  font-family: var(--font_stack);
+  font-size: var(--font_size_base);
+  line-height: var(--font_line_height);
+  background-color: var(--colour_space_background);
+}
+
+body {
+  font-size: 100%;
+  margin: 0;
+}
+
+planet,
+orbit,
+star {
+  transition-property: width, height;
+  transition-duration: 1s;
+}

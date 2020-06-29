@@ -1,0 +1,17 @@
+orbit {
+  --orbit_display_diameter: calc(
+    var(--orbit_radius) *
+    var(--orbit_unit_multiplier) *
+    var(--distance_display_unit)
+  );
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  border: 1px solid rgba(255,255,255,.25);
+  width: var(--orbit_display_diameter);
+  height: var(--orbit_display_diameter);
+}

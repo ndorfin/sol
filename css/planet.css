@@ -1,0 +1,18 @@
+planet {
+  --planet_diameter: calc(
+    var(--body_diameter) *
+    var(--diameter_unit_multiplier) *
+    var(--distance_display_unit)
+  );
+
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: block;
+  border-radius: 100%;
+  background-color: var(--colour_body,#555);
+  width: var(--planet_diameter);
+  height: var(--planet_diameter);
+}

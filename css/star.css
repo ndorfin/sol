@@ -1,0 +1,17 @@
+star {
+  --star_diameter: calc(
+    var(--body_diameter) *
+    var(--diameter_unit_multiplier) *
+    var(--distance_display_unit)
+  );
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border-radius: 100%;
+  background-color: #fff;
+  width: var(--star_diameter);
+  height: var(--star_diameter);
+}

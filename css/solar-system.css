@@ -1,0 +1,13 @@
+solar-system {
+  --solar_system_display_radius: calc(
+    var(--solar_system_radius) *
+    var(--orbit_distance_multiplier) *
+    var(--distance_display_unit)
+  );
+
+  display: block;
+  background-color: var(--colour_space_background);
+  min-height: 100vh;
+  position: relative;
+  height: var(--solar_system_display_radius);
+}

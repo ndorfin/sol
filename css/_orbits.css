@@ -1,0 +1,21 @@
+/*
+  Data from Wikipedia
+  Values are in Astronomical Units (AU)
+*/
+
+/* Solar System Size */
+solar-system {--solar_system_radius: 31;}
+
+/* Planets */
+orbit[name="mercury"]  {--orbit_radius: 0.387098;}
+orbit[name="venus"]    {--orbit_radius: 0.723332;}
+orbit[name="earth"]    {--orbit_radius: 1;}
+orbit[name="mars"]     {--orbit_radius: 1.523679;}
+orbit[name="jupiter"]  {--orbit_radius: 5.2;}
+orbit[name="saturn"]   {--orbit_radius: 9.5826;}
+orbit[name="uranus"]   {--orbit_radius: 19.2184;}
+orbit[name="neptune"]  {--orbit_radius: 30;}
+
+/* Dwarf Planets */
+orbit[name="pluto"]    {--orbit_radius: 39.482;}
+orbit[name="eris"]     {--orbit_radius: 67.864;}

@@ -1,0 +1,18 @@
+:root {
+  /* Measurement Constants */
+  --distance_au_in_km: 149597870.7;
+
+  --font_stack: 'Avenir Next', Helvetica, Roboto, sans-serif;
+  --font_size_base: 16px;
+  --font_line_height: 1;
+
+
+  --colour_space_background: #000;
+  --distance_unit_multiplier: 0.001;
+  --diameter_unit_multiplier: var(--distance_unit_multiplier);
+  --orbit_unit_multiplier: calc(
+    var(--distance_au_in_km) *
+    var(--distance_unit_multiplier)
+  );
+  --distance_display_unit: 1px;
+}
