@@ -1,6 +1,12 @@
 orbit {
-  --orbit_display_diameter: calc(
-    (var(--orbit_radius) * 2) *
+  --orbit_display_width: calc(
+    (var(--orbit_radius_min) * 2) *
+    var(--orbit_unit_multiplier) *
+    var(--distance_display_unit)
+  );
+
+  --orbit_display_height: calc(
+    (var(--orbit_radius_max) * 2) *
     var(--orbit_unit_multiplier) *
     var(--distance_display_unit)
   );
@@ -13,6 +19,6 @@ orbit {
   border-width: 2px;
   border-style: solid;
   border-color: rgba(205, 234, 255, var(--opacity_orbits));
-  width: var(--orbit_display_diameter);
-  height: var(--orbit_display_diameter);
+  width: var(--orbit_display_width);
+  height: var(--orbit_display_height);
 }

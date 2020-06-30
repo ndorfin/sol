@@ -7,15 +7,11 @@
 solar-system {--solar_system_radius: 31;}
 
 /* Planets */
-orbit[name="mercury"]  {--orbit_radius: 0.387098;}
-orbit[name="venus"]    {--orbit_radius: 0.723332;}
-orbit[name="earth"]    {--orbit_radius: 1;}
-orbit[name="mars"]     {--orbit_radius: 1.523679;}
-orbit[name="jupiter"]  {--orbit_radius: 5.2;}
-orbit[name="saturn"]   {--orbit_radius: 9.5826;}
-orbit[name="uranus"]   {--orbit_radius: 19.2184;}
-orbit[name="neptune"]  {--orbit_radius: 30;}
-
-/* Dwarf Planets */
-orbit[name="pluto"]    {--orbit_radius: 39.482;}
-orbit[name="eris"]     {--orbit_radius: 67.864;}
+orbit[name="mercury"]  { --orbit_radius_max:  0.47; --orbit_radius_min:  0.31; }
+orbit[name="venus"]    { --orbit_radius_max:  0.73; --orbit_radius_min:  0.72; }
+orbit[name="earth"]    { --orbit_radius_max:  1.02; --orbit_radius_min:  0.98; }
+orbit[name="mars"]     { --orbit_radius_max:  1.67; --orbit_radius_min:  1.67; }
+orbit[name="jupiter"]  { --orbit_radius_max:  5.46; --orbit_radius_min:  4.95; }
+orbit[name="saturn"]   { --orbit_radius_max: 10.12; --orbit_radius_min:  9.04; }
+orbit[name="uranus"]   { --orbit_radius_max: 20.11; --orbit_radius_min: 18.33; }
+orbit[name="neptune"]  { --orbit_radius_max: 30.33; --orbit_radius_min: 29.81; }
