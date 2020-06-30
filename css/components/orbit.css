@@ -16,9 +16,21 @@ orbit {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 100%;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: rgba(205, 234, 255, var(--opacity_orbits));
+  border-color: rgb(200, 200, 200);
   width: var(--orbit_display_width);
   height: var(--orbit_display_height);
+}
+
+.scale_orbits orbit {
+  --orbit_diameter: calc(
+    var(--orbit_fallback_multiplier) *
+    var(--orbit_fallback_interval) *
+    var(--orbit_unit_multiplier) *
+    var(--distance_display_unit)
+  );
+
+  width: var(--orbit_diameter);
+  height: var(--orbit_diameter);
 }

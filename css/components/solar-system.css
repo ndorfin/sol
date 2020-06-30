@@ -6,7 +6,7 @@ solar-system {
   );
 
   display: block;
-  background-color: var(--colour_space_background);
+  background-color: rgb(var(--colour_space_background));
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;

@@ -25,6 +25,7 @@ const changeHandler = (event) => {
     let propValue = (getCustomProp(propName)) ? '' : elemDataset.propValue;
     setCustomProp(propName, propValue);
   }
+
   if (elemDataset.propOverride) {
     let propName = buildCustomProp(elemDataset.propOverride);
     let propValue = elemDataset.propValue;
@@ -42,6 +43,9 @@ const changeHandler = (event) => {
       behavior: 'smooth',
       block: 'center'
     });
+  }
+  if (elemDataset.toggleClass) {
+    rootNode.classList.toggle(elemDataset.toggleClass);
   }
 }
 

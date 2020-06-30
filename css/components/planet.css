@@ -16,9 +16,10 @@ planet {
   background-color: currentColor;
   width: var(--planet_diameter);
   height: var(--planet_diameter);
-  border-width: calc(var(--planet_diameter) / 2);
+  border-width: calc(var(--planet_diameter) / 5);
   border-style: solid;
-  border-color: var(--colour_space_background);
+  border-color: rgba(var(--colour_space_background), .5);
+  background-clip: padding-box;
 }
 
 planet::before {
@@ -32,4 +33,8 @@ planet::before {
   left: 50%;
   transform: translate(-50%, 50%);
   font-size: 2.5vh;
+}
+
+.scale_bodies planet {
+  --planet_diameter: 50px;
 }
