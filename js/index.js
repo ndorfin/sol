@@ -51,8 +51,7 @@ const changeHandler = (event) => {
 
 const ready = (event) => {
   let formTemplate = document.querySelector('#template_form_controls').content.cloneNode(true);
-  let solarSystem = document.querySelector('#solar-system');
-  solarSystem.appendChild(formTemplate);
+  document.body.appendChild(formTemplate);
   document.addEventListener('change', changeHandler);
 }
 
