@@ -49,7 +49,7 @@ const changeHandler = (event) => {
   }
 }
 
-const ready = (event) => {
+const ready = () => {
   let formTemplate = document.querySelector('#template_form_controls').content.cloneNode(true);
   document.body.appendChild(formTemplate);
   document.addEventListener('change', changeHandler);

@@ -1,15 +1,22 @@
 orbit {
-  --orbit_display_width: calc(
+  --orbit_display_min: calc(
     (var(--orbit_radius_min) * 2) *
     var(--orbit_unit_multiplier) *
     var(--distance_display_unit)
   );
 
-  --orbit_display_height: calc(
+  --orbit_display_max: calc(
     (var(--orbit_radius_max) * 2) *
     var(--orbit_unit_multiplier) *
     var(--distance_display_unit)
   );
+
+  --orbit_display_avg: calc(
+    (var(--orbit_radius_avg) * 2) *
+    var(--orbit_unit_multiplier) *
+    var(--distance_display_unit)
+  );
+
 
   position: absolute;
   top: 50%;
@@ -19,8 +26,8 @@ orbit {
   border-width: 1px;
   border-style: solid;
   border-color: rgb(200, 200, 200);
-  width: var(--orbit_display_width);
-  height: var(--orbit_display_height);
+  width: var(--orbit_display_avg);
+  height: var(--orbit_display_avg);
 }
 
 .scale_orbits orbit {

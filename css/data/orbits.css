@@ -7,11 +7,15 @@
 solar-system {--solar_system_radius: 31;}
 
 /* Planets */
-orbit[name="mercury"]  { --orbit_radius_max:  0.47; --orbit_radius_min:  0.31; --orbit_fallback_multiplier: 1; }
-orbit[name="venus"]    { --orbit_radius_max:  0.73; --orbit_radius_min:  0.72; --orbit_fallback_multiplier: 2; }
-orbit[name="earth"]    { --orbit_radius_max:  1.02; --orbit_radius_min:  0.98; --orbit_fallback_multiplier: 3; }
-orbit[name="mars"]     { --orbit_radius_max:  1.67; --orbit_radius_min:  1.67; --orbit_fallback_multiplier: 4; }
-orbit[name="jupiter"]  { --orbit_radius_max:  5.46; --orbit_radius_min:  4.95; --orbit_fallback_multiplier: 5; }
-orbit[name="saturn"]   { --orbit_radius_max: 10.12; --orbit_radius_min:  9.04; --orbit_fallback_multiplier: 6; }
-orbit[name="uranus"]   { --orbit_radius_max: 20.11; --orbit_radius_min: 18.33; --orbit_fallback_multiplier: 7; }
-orbit[name="neptune"]  { --orbit_radius_max: 30.33; --orbit_radius_min: 29.81; --orbit_fallback_multiplier: 8; }
+orbit[name="mercury"]  { --orbit_radius_max:  0.47; --orbit_radius_min:  0.31; --orbit_fallback_multiplier: 1; --orbit_radius_avg: 0.387098;}
+orbit[name="venus"]    { --orbit_radius_max:  0.73; --orbit_radius_min:  0.72; --orbit_fallback_multiplier: 2; --orbit_radius_avg: 0.723332;}
+orbit[name="earth"]    { --orbit_radius_max:  1.02; --orbit_radius_min:  0.98; --orbit_fallback_multiplier: 3; --orbit_radius_avg: 1;}
+orbit[name="mars"]     { --orbit_radius_max:  1.67; --orbit_radius_min:  1.67; --orbit_fallback_multiplier: 4; --orbit_radius_avg: 1.523679;}
+orbit[name="jupiter"]  { --orbit_radius_max:  5.46; --orbit_radius_min:  4.95; --orbit_fallback_multiplier: 5; --orbit_radius_avg: 5.2;}
+orbit[name="saturn"]   { --orbit_radius_max: 10.12; --orbit_radius_min:  9.04; --orbit_fallback_multiplier: 6; --orbit_radius_avg: 9.5826;}
+orbit[name="uranus"]   { --orbit_radius_max: 20.11; --orbit_radius_min: 18.33; --orbit_fallback_multiplier: 7; --orbit_radius_avg: 19.2184;}
+orbit[name="neptune"]  { --orbit_radius_max: 30.33; --orbit_radius_min: 29.81; --orbit_fallback_multiplier: 8; --orbit_radius_avg: 30;}
+
+/* Dwarf Planets */
+orbit[name="pluto"]    {--orbit_radius_avg: 39.482;}
+orbit[name="eris"]     {--orbit_radius_avg: 67.864;}
